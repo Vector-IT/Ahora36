@@ -98,10 +98,10 @@
 							<p class="center">Recibirá detalles de financiación y toda la información que necesite para llegar a su casa propia</p>
 							<img src="images/arrow.png" alt="#">
 							<div class="row">
-								<div class="col-lg-3 center hidden-xs hidden-sm"></div>
-								<div class="col-lg-6 center">
-									<label for="cmbIngreso">Seleccione su ingreso apróximado</label>
-									<select id="cmbIngreso" name="Ingreso" class="sm-form-control">
+								<div class="col-md-3 center hidden-xs hidden-sm"></div>
+								<div class="col-md-6 center">
+									<label for="cmbIngresoCasa">Seleccione su ingreso apróximado</label>
+									<select id="cmbIngresoCasa" name="IngresoCasa" class="sm-form-control">
 										<option value="" selected disabled>-- Seleccione su ingreso apróximado --</option>
 										<option>de $5000 a $10000</option>
 										<option>de $10000 a $15000</option>
@@ -112,23 +112,23 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-3 center hidden-xs hidden-sm"></div>
-								<div class="col-lg-6 center">
+								<div class="col-md-3 center hidden-xs hidden-sm"></div>
+								<div class="col-md-6 center">
 									<div class="fleft" style="margin:15px;">
-										<input id="radio-1" class="radio-style" name="radIngreso" type="radio" checked="" value="Ingreso particular">
+										<input id="radio-1" class="radio-style" name="radIngresoCasa" type="radio" checked="" value="Ingreso particular">
 										<label for="radio-1" class="radio-style-1-label radio-small">Ingreso Particular</label>
 									</div>
 									<div class="fleft"  style="margin:15px;">
-										<input id="radio-2" class="radio-style" name="radIngreso" type="radio" value="Ingreso familiar">
+										<input id="radio-2" class="radio-style" name="radIngresoCasa" type="radio" value="Ingreso familiar">
 										<label for="radio-2" class="radio-style-2-label radio-small">Ingreso Familiar</label>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-12 col-md-12">
+							<div class="col-md-12 col-md-12">
 								<div class="row">
 									<div class="col-md-6">
-										<label for="txtMonto">Tipologia <small>*</small></label>
-										<select id="txtMonto" name="txtMonto" class="sm-form-control">
+										<label for="txtMontoCasa">Tipologia <small>*</small></label>
+										<select id="txtMontoCasa" name="txtMontoCasa" class="sm-form-control">
 											<option>1 dormitorio</option>
 											<option>2 dormitorios</option>
 											<option>3 dormitorios</option>
@@ -136,27 +136,27 @@
 										</select>
 									</div>
 									<div class="col-md-6">
-										<label for="txtCuota">Valor de cuota que puede pagar <small>*</small></label>
-										<input type="number" id="txtCuota" name="txtCuota" value="" class="sm-form-control required" aria-required="true" required>
+										<label for="txtCuotaCasa">Valor de cuota que puede pagar <small>*</small></label>
+										<input type="number" id="txtCuotaCasa" name="txtCuotaCasa" value="" class="sm-form-control required" aria-required="true" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-6">
-										<label for="txtCUIT">CUIL/CUIT <small>(Sin guiones ni espacios) *</small></label><span>Si no conoce su CUIL ingrese <a href="http://www.anses.gob.ar/constancia-de-cuil/" target="_blank">aqu&iacute;</a></span>
-										<input type="text" id="txtCUIT" name="txtCUIT" value="" class="sm-form-control required" aria-required="true" required>
+										<label for="txtCUITCasa">CUIL/CUIT <small>(Sin guiones ni espacios) *</small></label><span>Si no conoce su CUIL ingrese <a href="http://www.anses.gob.ar/constancia-de-cuil/" target="_blank">aqu&iacute;</a></span>
+										<input type="text" id="txtCUITCasa" name="txtCUITCasa" value="" class="sm-form-control required txtCUIT" aria-required="true" required>
 									</div>
 									<div class="col-md-6">
-										<label for="txtEmail">Email <small>*</small></label>
-										<input type="email" id="txtEmail" name="txtEmail" value="" class="sm-form-control required" aria-required="true" required>
+										<label for="txtEmailCasa">Email <small>*</small></label>
+										<input type="email" id="txtEmailCasa" name="txtEmailCasa" value="" class="sm-form-control required" aria-required="true" required>
 									</div>
 								</div>
-								<h3 id="resultadoCuit" class="resultadoCuit" style="margin: 0 !important;"></h3>
+								<h3 id="resultadoCuitCasa" class="resultadoCuit" style="margin: 0 !important;"></h3>
 							</div>
 							<div class="col-md-12">
 								<div class="row">
 									<div class="col-md-6">
-										<label for="cmbProvincia">Provincia</label>
-										<select id="cmbProvincia" name="cmbProvincia" class="sm-form-control">
+										<label for="cmbProvinciaCasa">Provincia</label>
+										<select id="cmbProvinciaCasa" name="cmbProvinciaCasa" class="sm-form-control">
 											<option>Capital Federal</option>
 											<option>Buenos Aires</option>
 											<option>Catamarca</option>
@@ -184,22 +184,22 @@
 										</select>
 									</div>
 									<div class="col-md-6">
-										<label for="txtCiudad">Ciudad <small>*</small></label>
-										<input type="text" id="txtCiudad" name="txtCiudad" value="" class="sm-form-control required" aria-required="true" required>
+										<label for="txtCiudadCasa">Ciudad <small>*</small></label>
+										<input type="text" id="txtCiudadCasa" name="txtCiudadCasa" value="" class="sm-form-control required" aria-required="true" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
 										<div class="row">
 											<div class="col-md-6">
-												<label for="txtTelefono">Teléfono <small>*</small></label>
-												<input type="tel" id="txtTelefono" name="txtTelefono" value="" class="sm-form-control required" aria-required="true" required>
+												<label for="txtTelefonoCasa">Teléfono <small>*</small></label>
+												<input type="tel" id="txtTelefonoCasa" name="txtTelefonoCasa" value="" class="sm-form-control required" aria-required="true" required>
 											</div>
 											<div class="col-md-6">
 												<div class="row">
 													<div class="col-sm-6">
-														<label for="horaDesde">Horario de Contacto</label>
-														<select class="sm-form-control" id="horaDesde" required>
+														<label for="horaDesdeCasa">Horario de Contacto</label>
+														<select class="sm-form-control" id="horaDesdeCasa" required>
 															<option selected="selected">09 hs</option>
 															<option>10 hs</option>
 															<option>11 hs</option>
@@ -215,8 +215,8 @@
 														</select>
 													</div>
 													<div class="col-sm-6">
-														<label for="horaHasta">&nbsp;</label>
-														<select class="sm-form-control" id="horaHasta" required>
+														<label for="horaHastaCasa">&nbsp;</label>
+														<select class="sm-form-control" id="horaHastaCasa" required>
 															<option selected="selected">09 hs</option>
 															<option>10 hs</option>
 															<option>11 hs</option>
@@ -239,7 +239,7 @@
 								<div class="row">
 									<div class="col-md-12 center">
 										<label for="txtConsulta">CONSULTA <small>*</small></label>
-										<textarea class="required sm-form-control" id="txtConsulta" name="txtConsulta" rows="6" cols="30" aria-required="true" required></textarea>
+										<textarea class="required sm-form-control" id="txtConsultaCasa" name="txtConsultaCasa" rows="6" cols="30" aria-required="true" required></textarea>
 										<button class="button topmargin" style="min-width:250px;" type="submit" id="btnSolicitar" name="btnSolicitar" value="submit">ENVIAR</button>
 									</div>
 								</div>
@@ -271,11 +271,11 @@
 							<h3 class="center">Complete el siguiente formulario</h3>
 							<p class="center">Recibirá detalles de financiación y toda la información que necesite para llegar a su auto</p>
 							<img src="images/arrow.png" alt="#">
-							<div class="col-lg-12 col-md-12">
+							<div class="col-md-12 col-md-12">
 								<div class="row">
 									<div class="col-md-6">
-										<label for="cmbMarca">Marca de auto deseado <small>*</small></label>
-										<select id="cmbMarca" name="cmbMarca" class="sm-form-control" onchange="cargarModelos(this.value)">
+										<label for="cmbMarcaAuto">Marca de auto deseado <small>*</small></label>
+										<select id="cmbMarcaAuto" name="cmbMarcaAuto" class="sm-form-control" onchange="cargarModelos(this.value)">
 											<option>Chevrolet</option>
 											<option>Citroen</option>
 											<option>Fiat</option>
@@ -286,8 +286,8 @@
 										</select>
 									</div>
 									<div class="col-md-6">
-										<label for="cmbModelo">Modelo de auto deseado <small>*</small></label>
-										<select id="cmbModelo" name="cmbModelo" class="sm-form-control">
+										<label for="cmbModeloAuto">Modelo de auto deseado <small>*</small></label>
+										<select id="cmbModeloAuto" name="cmbModeloAuto" class="sm-form-control">
 											<option>Agile</option>
 											<option>Camaro</option>
 											<option>Captiva</option>
@@ -315,34 +315,34 @@
 								</div>
 								<div class="row">
 									<div class="col-md-6">
-										<label for="txtMonto">Dispone de usado para entregar? <small>*</small></label>
-										<select id="txtMonto" name="txtMonto" class="sm-form-control">
+										<label for="txtMontoAuto">Dispone de usado para entregar? <small>*</small></label>
+										<select id="txtMontoAuto" name="txtMontoAuto" class="sm-form-control">
 											<option>SI</option>
 											<option>NO</option>
 										</select>
 									</div>
 									<div class="col-md-6">
-										<label for="txtCuota">Valor de cuota que puede pagar <small>*</small></label>
-										<input type="number" id="txtCuota" name="txtCuota" value="" min="1000" step="500" class="sm-form-control required" aria-required="true" required>
+										<label for="txtCuotaAuto">Valor de cuota que puede pagar <small>*</small></label>
+										<input type="number" id="txtCuotaAuto" name="txtCuotaAuto" value="" min="1000" step="500" class="sm-form-control required" aria-required="true" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-6">
-										<label for="txtCUIT">CUIL/CUIT <small>(Sin guiones ni espacios) *</small></label><span>Si no conoce su CUIL ingrese <a href="http://www.anses.gob.ar/constancia-de-cuil/" target="_blank">aqu&iacute;</a></span>
-										<input type="text" id="txtCUIT" name="txtCUIT" value="" class="sm-form-control required" aria-required="true" required>
+										<label for="txtCUITAuto">CUIL/CUIT <small>(Sin guiones ni espacios) *</small></label><span>Si no conoce su CUIL ingrese <a href="http://www.anses.gob.ar/constancia-de-cuil/" target="_blank">aqu&iacute;</a></span>
+										<input type="text" id="txtCUITAuto" name="txtCUITAuto" value="" class="sm-form-control required txtCUIT" aria-required="true" required>
 									</div>
 									<div class="col-md-6">
-										<label for="txtEmail">Email <small>*</small></label>
-										<input type="email" id="txtEmail" name="txtEmail" value="" class="sm-form-control required" aria-required="true" required>
+										<label for="txtEmailAuto">Email <small>*</small></label>
+										<input type="email" id="txtEmailAuto" name="txtEmailAuto" value="" class="sm-form-control required" aria-required="true" required>
 									</div>
 								</div>
-								<h3 id="resultadoCuit" class="resultadoCuit" style="margin: 0 !important;"></h3>
+								<h3 id="resultadoCuitAuto" class="resultadoCuit" style="margin: 0 !important;"></h3>
 							</div>
 							<div class="col-md-12">
 								<div class="row">
 									<div class="col-md-6">
-										<label for="cmbProvincia">Provincia</label>
-										<select id="cmbProvincia" name="cmbProvincia" class="sm-form-control">
+										<label for="cmbProvinciaAuto">Provincia</label>
+										<select id="cmbProvinciaAuto" name="cmbProvinciaAuto" class="sm-form-control">
 											<option>Capital Federal</option>
 											<option>Buenos Aires</option>
 											<option>Catamarca</option>
@@ -370,22 +370,22 @@
 										</select>
 									</div>
 									<div class="col-md-6">
-										<label for="txtCiudad">Ciudad <small>*</small></label>
-										<input type="text" id="txtCiudad" name="txtCiudad" value="" class="sm-form-control required" aria-required="true" required>
+										<label for="txtCiudadAuto">Ciudad <small>*</small></label>
+										<input type="text" id="txtCiudadAuto" name="txtCiudadAuto" value="" class="sm-form-control required" aria-required="true" required>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
 										<div class="row">
 											<div class="col-md-6">
-												<label for="txtTelefono">Teléfono <small>*</small></label>
-												<input type="tel" id="txtTelefono" name="txtTelefono" value="" class="sm-form-control required" aria-required="true" required>
+												<label for="txtTelefonoAuto">Teléfono <small>*</small></label>
+												<input type="tel" id="txtTelefonoAuto" name="txtTelefonoAuto" value="" class="sm-form-control required" aria-required="true" required>
 											</div>
 											<div class="col-md-6">
 												<div class="row">
 													<div class="col-sm-6">
-														<label for="horaDesde">Horario de Contacto</label>
-														<select class="sm-form-control" id="horaDesde" required>
+														<label for="horaDesdeAuto">Horario de Contacto</label>
+														<select class="sm-form-control" id="horaDesdeAuto" required>
 															<option selected="selected">09 hs</option>
 															<option>10 hs</option>
 															<option>11 hs</option>
@@ -401,8 +401,8 @@
 														</select>
 													</div>
 													<div class="col-sm-6">
-														<label for="horaHasta">&nbsp;</label>
-														<select class="sm-form-control" id="horaHasta" required>
+														<label for="horaHastaAuto">&nbsp;</label>
+														<select class="sm-form-control" id="horaHastaAuto" required>
 															<option selected="selected">09 hs</option>
 															<option>10 hs</option>
 															<option>11 hs</option>
@@ -424,8 +424,8 @@
 								</div>
 								<div class="row">
 									<div class="col-md-12 center">
-										<label for="txtConsulta">CONSULTA <small>*</small></label>
-										<textarea class="required sm-form-control" id="txtConsulta" name="txtConsulta" rows="6" cols="30" aria-required="true" required></textarea>
+										<label for="txtConsultaAuto">CONSULTA <small>*</small></label>
+										<textarea class="required sm-form-control" id="txtConsultaAuto" name="txtConsultaAuto" rows="6" cols="30" aria-required="true" required></textarea>
 										<button class="button topmargin" style="min-width:250px;" type="submit" id="btnSolicitar" name="btnSolicitar" value="submit">ENVIAR</button>
 									</div>
 								</div>
@@ -436,24 +436,24 @@
 				</div>
 			</div>
 
-<!-- CASAS -->
+<!-- CASAS
 			<div class="section infoCasa">
 				<div class="container-fluid">
 					<div class="row">
 						<h1 class="center">Préstamos a su medida </h1>
-						<div class="col-lg-4 ">
+						<div class="col-md-4 ">
 							<div class="capsula">
 								<h2>PASO 1</h2>
 								<p>Complete el formulario con sus datos</p>
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-md-4">
 							<div class="capsula">
 								<h2>PASO 2</h2>
 								<p>Verificaremos sus datos y disponibilidad para acceder al préstamo</p>
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-md-4">
 							<div class="capsula">
 								<h2>PASO 3</h2>
 								<p>Le brindaremos las opciones de préstamos a medida para obtener su vivienda soñada.</p>
@@ -461,13 +461,13 @@
 						</div>
 					</div>
 					<div class="row col-padding-dos topmargin ">
-						<div class="col-sm-3 col-sm-offset-2" style=" background:#21BBF9;color:#FFF; text-align:center; line-height:32px">PREGUNTAS FRECUENTES</div>
-						<div class="col-sm-5" style=" background:#3F3F3F; color:#FFF;text-align:center;line-height:32px">Solicite su crédito en simples pasos. Sin requisitos, solo con DNI.</div>
+						<div class="col-sm-3 col-sm-offset-1" style=" background:#21BBF9;color:#FFF; text-align:center; line-height:32px">PREGUNTAS FRECUENTES</div>
+						<div class="col-sm-6" style=" background:#3F3F3F; color:#FFF;text-align:center;line-height:32px">Solicite su crédito en simples pasos. Sin requisitos, solo con DNI.</div>
 					</div>
 					<div class="section" style="background:#FFF">
 						<div class="row col-padding-dos">
-							<div class="col-lg-1" ></div>
-							<div class="col-lg-5" >
+							<div class="col-md-1" ></div>
+							<div class="col-md-5" >
 								<div class="feature-box bottommargin-lg">
 									<div class="fbox-icon"> <img src="images/1.fw.png" alt="#"> </div>
 									<h3>Créditos a tu medida</h3>
@@ -484,8 +484,8 @@
 									<p>Siempre estamos online para que solicites tu crédito.</p>
 								</div>
 							</div>
-							<div class="col-lg-1" ></div>
-							<div class="col-lg-5">
+							<div class="col-md-1" ></div>
+							<div class="col-md-5">
 								<div class="feature-box bottommargin-lg">
 									<div class="fbox-icon"> <img src="images/4.fw.png" alt="#"> </div>
 									<h3>Más barato que los bancos</h3>
@@ -506,28 +506,28 @@
 					</div>
 				</div>
 			</div>
-
+ -->
 <!-- AUTOS -->
 			<div class="section infoAuto">
 				<div class="container-fluid">
 					<div class="row">
 						<h1 class="center">Financiación a su medida </h1>
-						<div class="col-lg-4 ">
+						<div class="col-md-4 ">
 							<div class="capsula">
 								<h2>PASO 1</h2>
 								<p>Complete el formulario con sus datos</p>
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-md-4">
 							<div class="capsula">
 								<h2>PASO 2</h2>
 								<p>Verificaremos sus datos y disponibilidad para acceder al préstamo</p>
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-md-4">
 							<div class="capsula">
 								<h2>PASO 3</h2>
-								<p>Le brindaremos las opciones de préstamos a medida para obtener su auto soñado.</p>
+								<p>Le brindaremos las opciones de préstamos a medida para obtener su vivienda o auto soñado.</p>
 							</div>
 						</div>
 					</div>
@@ -537,8 +537,8 @@
 					</div>
 					<div class="section" style="background:#FFF">
 						<div class="row col-padding-dos">
-							<div class="col-lg-1" ></div>
-							<div class="col-lg-5" >
+							<div class="col-md-1" ></div>
+							<div class="col-md-5" >
 								<div class="feature-box bottommargin-lg">
 									<div class="fbox-icon"> <img src="images/1.fw.png" alt="#"> </div>
 									<h3>Cuánto dinero puedo obtener?</h3>
@@ -555,8 +555,8 @@
 									<p>NO. Completar el formulario simplemente nos perminte realizar una busqueda personalizada de créditos para vos. Sin obligación de compra.</p>
 								</div>
 							</div>
-							<div class="col-lg-1" ></div>
-							<div class="col-lg-5">
+							<div class="col-md-1" ></div>
+							<div class="col-md-5">
 								<div class="feature-box bottommargin-lg">
 									<div class="fbox-icon"> <img src="images/4.fw.png" alt="#"> </div>
 									<h3>Cómo obtengo el préstamo?</h3>

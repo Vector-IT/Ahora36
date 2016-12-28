@@ -13551,4 +13551,4 @@ body:not(.no-transition) #wrapper,
 .btnTab { min-width: 130px; background-color: #AAAAAA; }
 .btnActivo { background-color: #016EB3; }
 
-.datosAuto, .infoAuto {display: none;}
+.datosAuto {display: none;}
