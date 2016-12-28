@@ -536,7 +536,6 @@ span.middot {
 	position: relative;
 	margin: 25px 0;
 	padding: 25px 0;
-	background-color: #F9F9F9;
 	overflow: hidden;
 }
 
@@ -6608,7 +6607,7 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	font-size: 14px;
 	height: 40px;
 	line-height: 40px;
-	background-color: #ffa704;
+	background-color: #3A9CD9;
 	color: #FFF;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -6637,7 +6636,7 @@ body:not(.device-touch) .button {
 }
 
 .button:hover {
-	background-color: #444;
+	background-color: #016EB3;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -6800,7 +6799,7 @@ body:not(.device-touch) .button {
 }
 
 .button.button-3d:hover {
-	background-color: #FF2626!important;
+	background-color: #016EB3;
 	opacity: 0.9;
 }
 
@@ -7502,8 +7501,7 @@ body:not(.device-touch) .button.button-full strong {
 	color: #FFF;
 }
 
-.feature-box .fbox-icon i,
-.feature-box .fbox-icon img {
+.feature-box .fbox-icon i {
 	background-color: #1ABC9C;
 }
 
@@ -10923,7 +10921,10 @@ body:not(.device-touch) .text-overlay {
 	color: #555555;
 	background-color: #fbf7f8;
 	background-image: none;
-	border: 1px solid #a99b65;
+	border-top: 1px solid #a99b65;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
 	border-radius: 0 !important;
 	-webkit-transition: border-color ease-in-out .15s;
 	-o-transition: border-color ease-in-out .15s;
@@ -13527,10 +13528,11 @@ body:not(.no-transition) #wrapper,
 	margin:0!important;
 	padding:0!important
 }
-.capsula  { border-top:10px solid #17440f; background:#f7f7f7; margin-right:20px; padding:60px 20px; min-height:330px;}
+.capsula  {border-top: 10px solid #58ABDF;background:#f7f7f7;margin-right:20px;padding:60px 20px;min-height:330px;}
 
-.capsula h2 { text-align:center; background:#3BD27B; color:#FFF!important; font-size:18px; font-weight:100!important; width:30%; margin:0 auto 50px auto}
+.capsula h2 {text-align:center;background: #FD3131;color:#FFF!important;font-size:18px;font-weight:100!important;width:30%;margin:0 auto 50px auto;}
 .capsula p {font-size:20px; color:#000; text-align:center; line-height:25px!important;}
+.gardel { background: #E8E8E8; }
 .gardel label { margin-top:30px;}
 
 .logoFabrica {
@@ -13545,3 +13547,8 @@ body:not(.no-transition) #wrapper,
 .sticky-header .standard-logo {
 	visibility: visible !important;
 }
+
+.btnTab { min-width: 130px; background-color: #AAAAAA; }
+.btnActivo { background-color: #016EB3; }
+
+.datosAuto, .infoAuto {display: none;}
