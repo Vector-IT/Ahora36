@@ -55,7 +55,8 @@
 						<a href="index.html" class="standard-logo" data-dark-logo="img/logo.jpg"><img class="divcenter" src="img/logo.png" alt="creditos"></a>
 						<a href="index.html" class="retina-logo" data-dark-logo="img/logo.jpg"><img class="divcenter" src="img/logo.png" alt="creditos"></a>
 					</div>
-					<button class="button button-3d btnAmarillo hidden-sm hidden-xs" style="position:absolute; right:0; top:5px;" onclick="$('html,body').animate({scrollTop: $('#btn1').offset().top-110}, 500);">Solicite su préstamo ya!</button>
+					<!--<button class="button button-3d btnAmarillo hidden-sm hidden-xs" style="position:absolute; right:0; top:5px;" onclick="$('html,body').animate({scrollTop: $('#btn1').offset().top-110}, 500);">Solicite su préstamo ya!</button>-->
+					<div class="textoHeader hidden-sm hidden-xs">Financiación 100%</div>
 					<!-- #logo end -->
 					<!-- Primary Navigation
 						============================================= -->
@@ -74,12 +75,13 @@
 				</div>
 			</div>
 			<div class="section text-center nopadding nobottommargin">
-				<button id="btn1" class="button btnTab btnActivo" data-objeto="Casa">VIVIENDAS</button>&nbsp;<button class="button btnTab" data-objeto="Auto">AUTOS</button>
+				<button id="btn1" class="button btnTab btnActivo" data-objeto="Casa">VIVIENDAS</button>&nbsp;<button class="button btnTab" data-objeto="Auto">VEHICULOS 0KM</button>
 			</div>
 <!-- CASAS -->			
 			<div class="section gardel datosCasa">
 				<div class="container" style="background:#FFF;">
 					<div class="row col-padding" id="divPrestamo">
+						<img src="img/viviendas.png" class="hidden-sm hidden-xs imgObjeto">
 						<!-- VECTOR-IT -->
 						<div class="row" id="prestamoOKCasa" style="display: none;">
 							<h2 class="text-center">Felicitaciones <span class="resultadoCuit"></span> su cr&eacute;dito ha sido Pre aprobado. Un representente se pondr&aacute; en contacto con usted a la brevedad.</h2>
@@ -115,7 +117,7 @@
 								<div class="col-md-3 center hidden-xs hidden-sm"></div>
 								<div class="col-md-6 center">
 									<div class="fleft" style="margin:15px;">
-										<input id="radio-1" class="radio-style" name="radIngresoCasa" type="radio" checked="" value="Ingreso particular">
+										<input id="radio-1" class="radio-style" name="radIngresoCasa" type="radio" checked="true" value="Ingreso particular">
 										<label for="radio-1" class="radio-style-1-label radio-small">Ingreso Particular</label>
 									</div>
 									<div class="fleft"  style="margin:15px;">
@@ -137,7 +139,12 @@
 									</div>
 									<div class="col-md-6">
 										<label for="txtCuotaCasa">Valor de cuota que puede pagar <small>*</small></label>
-										<input type="number" id="txtCuotaCasa" name="txtCuotaCasa" value="" class="sm-form-control required" aria-required="true" required>
+										<select id="txtCuotaAuto" name="txtCuotaAuto" class="sm-form-control">
+											<option>$2000 A $3000</option>
+											<option>$3000 A $4000</option>
+											<option>$5000 A $6000</option>
+											<option>MAS DE $6000</option>
+										</select>
 									</div>
 								</div>
 								<div class="row">
@@ -255,6 +262,7 @@
 				<div class="container" style="background:#FFF;">
 					<div class="row col-padding" id="divPrestamo">
 						<!-- VECTOR-IT -->
+						<img src="img/autos.png" class="hidden-sm hidden-xs imgObjeto">
 						<div class="row" id="prestamoOKAuto" style="display: none;">
 							<h2 class="text-center">Felicitaciones <span class="resultadoCuit"></span> su cr&eacute;dito ha sido Pre aprobado. Un representente se pondr&aacute; en contacto con usted a la brevedad.</h2>
 							<h3 class="text-center">A continuaci&oacute;n le sugerimos algunas empresas desarrollistas que califican en el rango de los montos que usted ha solicitado.</h3>
@@ -276,40 +284,37 @@
 									<div class="col-md-6">
 										<label for="cmbMarcaAuto">Marca de auto deseado <small>*</small></label>
 										<select id="cmbMarcaAuto" name="cmbMarcaAuto" class="sm-form-control" onchange="cargarModelos(this.value)">
-											<option>Chevrolet</option>
-											<option>Citroen</option>
-											<option>Fiat</option>
-											<option>Ford</option>
-											<option>Peugeout</option>
-											<option>Renault</option>
-											<option>Volkswagen</option>
+											<option>CHEVROLET</option>
+											<option>CITROEN</option>
+											<option>FIAT</option>
+											<option>FORD</option>
+											<option>PEUGEOUT</option>
+											<option>RENAULT</option>
+											<option>VOLKSWAGEN</option>
 										</select>
 									</div>
 									<div class="col-md-6">
 										<label for="cmbModeloAuto">Modelo de auto deseado <small>*</small></label>
 										<select id="cmbModeloAuto" name="cmbModeloAuto" class="sm-form-control">
-											<option>Agile</option>
-											<option>Camaro</option>
-											<option>Captiva</option>
-											<option>Classic</option>
-											<option>Cobalt 2016</option>
-											<option>Cruze</option>
-											<option>Montana</option>
-											<option>Nuevo Cruze 5</option>
-											<option>Onix</option>
-											<option>Onix Activ</option>
-											<option>Onix Joy</option>
-											<option>Prisma</option>
-											<option>Prisma Joy</option>
-											<option>S10 Cabina Doble</option>
-											<option>S10 Cabina Simple</option>
-											<option>S10 High Country</option>
-											<option>Sonic 4</option>
-											<option>Sonic 5</option>
-											<option>Spark</option>
-											<option>Spin</option>
-											<option>Tracker</option>
-											<option>Trailblazer</option>											
+											<option>SPARK</option>
+											<option>AGILE</option>
+											<option>CLASSIC</option>
+											<option>ONIX JOY</option>
+											<option>ONIX</option>
+											<option>PRISMA JOY</option>
+											<option>PRISMA</option>
+											<option>SONIC</option>
+											<option>COBALT</option>
+											<option>NUEVO CRUZE 5</option>
+											<option>CRUZE</option>
+											<option>CAMARO</option>
+											<option>MONTANA </option>
+											<option>TRUCKER</option>
+											<option>CAPTIVA</option>
+											<option>TRAILBLAZER</option>
+											<option>NUEVA S10</option>
+											<option>SPIN</option>
+											<option>OTRO</option>
 										</select>
 									</div>
 								</div>
@@ -323,7 +328,12 @@
 									</div>
 									<div class="col-md-6">
 										<label for="txtCuotaAuto">Valor de cuota que puede pagar <small>*</small></label>
-										<input type="number" id="txtCuotaAuto" name="txtCuotaAuto" value="" min="1000" step="500" class="sm-form-control required" aria-required="true" required>
+										<select id="txtCuotaAuto" name="txtCuotaAuto" class="sm-form-control">
+											<option>$2000 A $3000</option>
+											<option>$3000 A $4000</option>
+											<option>$5000 A $6000</option>
+											<option>MAS DE $6000</option>
+										</select>
 									</div>
 								</div>
 								<div class="row">
@@ -515,19 +525,19 @@
 						<div class="col-md-4 ">
 							<div class="capsula">
 								<h2>PASO 1</h2>
-								<p>Complete el formulario con sus datos</p>
+								<p>Complete el formulario con sus datos sin omitir ninguno</p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="capsula">
 								<h2>PASO 2</h2>
-								<p>Verificaremos sus datos y disponibilidad para acceder al préstamo</p>
+								<p>Verificamos sus datos y la disponibilidad del bien que solicita</p>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="capsula">
 								<h2>PASO 3</h2>
-								<p>Le brindaremos las opciones de préstamos a medida para obtener su vivienda o auto soñado.</p>
+								<p>Le daremos una respuesta al instante con las diferentes opciones para que usted pueda adquirir su <span class="txtObjeto">vivienda</span></p>
 							</div>
 						</div>
 					</div>
@@ -591,8 +601,8 @@
 						<h4 class="nomargin" style="color: white;">Créditos AHORA 36</h4>
 						<hr style="margin 10px 0;">
 						<div>
-							Vivienda<br/>
-							Autos
+							Viviendas<br/>
+							Vehículos 0km
 						</div>
 					</div>
 				</div>

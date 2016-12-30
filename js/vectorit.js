@@ -3,159 +3,134 @@ function cargarModelos(marca) {
 
     switch (marca) {
         case "Chevrolet":
-            salida+= "<option>Agile</option>";
-            salida+= "<option>Camaro</option>";
-            salida+= "<option>Captiva</option>";
-            salida+= "<option>Classic</option>";
-            salida+= "<option>Cobalt 2016</option>";
-            salida+= "<option>Cruze</option>";
-            salida+= "<option>Montana</option>";
-            salida+= "<option>Nuevo Cruze 5</option>";
-            salida+= "<option>Onix</option>";
-            salida+= "<option>Onix Activ</option>";
-            salida+= "<option>Onix Joy</option>";
-            salida+= "<option>Prisma</option>";
-            salida+= "<option>Prisma Joy</option>";
-            salida+= "<option>S10 Cabina Doble</option>";
-            salida+= "<option>S10 Cabina Simple</option>";
-            salida+= "<option>S10 High Country</option>";
-            salida+= "<option>Sonic 4</option>";
-            salida+= "<option>Sonic 5</option>";
-            salida+= "<option>Spark</option>";
-            salida+= "<option>Spin</option>";
-            salida+= "<option>Tracker</option>";
-            salida+= "<option>Trailblazer</option>";
-            salida+= "<option>Otro Modelo</option>";        
+            salida+= "<option>SPARK</option>";
+            salida+= "<option>AGILE</option>";
+            salida+= "<option>CLASSIC</option>";
+            salida+= "<option>ONIX JOY</option>";
+            salida+= "<option>ONIX</option>";
+            salida+= "<option>PRISMA JOY</option>";
+            salida+= "<option>PRISMA</option>";
+            salida+= "<option>SONIC</option>";
+            salida+= "<option>COBALT</option>";
+            salida+= "<option>NUEVO CRUZE 5</option>";
+            salida+= "<option>CRUZE</option>";
+            salida+= "<option>CAMARO</option>";
+            salida+= "<option>MONTANA </option>";
+            salida+= "<option>TRUCKER</option>";
+            salida+= "<option>CAPTIVA</option>";
+            salida+= "<option>TRAILBLAZER</option>";
+            salida+= "<option>NUEVA S10</option>";
+            salida+= "<option>SPIN</option>";
+            salida+= "<option>OTRO</option>";
             break;
 
         case "Citroen":
-            salida+= "<option>2CV</option>";
-            salida+= "<option>Air Cross</option>";
-            salida+= "<option>Berlingo</option>";
-            salida+= "<option>C-15</option>";
             salida+= "<option>C3</option>";
-            salida+= "<option>C3 Picasso</option>";
-            salida+= "<option>C4</option>";
+            salida+= "<option>C-Elyseé</option>";
             salida+= "<option>C4 Lounge</option>";
-            salida+= "<option>C4 Picasso</option>";
-            salida+= "<option>C5</option>";
-            salida+= "<option>DS3</option>";
-            salida+= "<option>DS4</option>";
-            salida+= "<option>Grand C4 Picasso</option>";
-            salida+= "<option>Jumper</option>";
-            salida+= "<option>Mehari</option>";
-            salida+= "<option>Xsara</option>";
-            salida+= "<option>Xsara Picasso</option>";
-            salida+= "<option>Otro Modelo</option>";
+            salida+= "<option>C3 AirCross</option>";
+            salida+= "<option>NUEVO C4 PICASSO</option>";
+            salida+= "<option>NUEVO GRAND C4 PICASSO</option>";
+            salida+= "<option>BERLINGO MULTISPACE</option>";
+            salida+= "<option>DS 3</option>";
+            salida+= "<option>DS 4 CROSSBACK</option>";
+            salida+= "<option>OTRO</option>";
             break;
 
         case "Fiat":
-            salida+= "<option>Grand Siena</option>";
             salida+= "<option>MOBI</option>";
-            salida+= "<option>Palio Nuevo</option>";
-            salida+= "<option>Palio Fire</option>";
-            salida+= "<option>Punto</option>";
-            salida+= "<option>Siena EL</option>";
-            salida+= "<option>Weekend</option>";
-            salida+= "<option>Weekend Adventure</option>";
-            salida+= "<option>Ducato</option>";
-            salida+= "<option>Fiorino</option>";
-            salida+= "<option>Strada</option>";
-            salida+= "<option>Toro</option>";
-            salida+= "<option>Uno Cargo</option>";
-            salida+= "<option>Otro Modelo</option>";        
+            salida+= "<option>FIORINO</option>";
+            salida+= "<option>DOBLÓ CARGO</option>";
+            salida+= "<option>FIAT TORO</option>";
+            salida+= "<option>LÍNEA</option>";
+            salida+= "<option>GRAND SIENA</option>";
+            salida+= "<option>STRADA</option>";
+            salida+= "<option>FIAT IDEA</option>";
+            salida+= "<option>500</option>";
+            salida+= "<option>UNO CARGO</option>";
+            salida+= "<option>DUCATO</option>";
+            salida+= "<option>PUNTO</option>";
+            salida+= "<option>SIENA EL</option>";
+            salida+= "<option>WEEKEND ADVENTURE</option>";
+            salida+= "<option>PALIO FIRE</option>";
+            salida+= "<option>NUEVO PALIO</option>";
+            salida+= "<option>OTRO</option>";
             break;
             
         case "Ford":
-            salida+= "<option>Ka</option>";
-            salida+= "<option>Fiesta</option>";
-            salida+= "<option>Focus</option>";
-            salida+= "<option>Ranger</option>";
-            salida+= "<option>EcoSport</option>";
-            salida+= "<option>Otro Modelo</option>";        
+            salida+= "<option>NUEVO KA</option>";
+            salida+= "<option>FIESTA</option>";
+            salida+= "<option>FIESTA SEDAN</option>";
+            salida+= "<option>FOCUS SEDAN</option>";
+            salida+= "<option>FOCUS</option>";
+            salida+= "<option>MONDEO</option>";
+            salida+= "<option>ECOSPORT</option>";
+            salida+= "<option>NUEVA RANGER</option>";
+            salida+= "<option>NUEVO KUGA</option>";
+            salida+= "<option>NUEVA TRANSIT CHASIS</option>";
+            salida+= "<option>NUEVA TRANSIT FURGON</option>";
+            salida+= "<option>NUEVO S-MAX (pronto)</option>";
+            salida+= "<option>NUEVO KA+ (pronto)</option>";
+            salida+= "<option>OTRO</option>";
             break;
             
         case "Peugeout":
-            salida+= "<option>106</option>";
-            salida+= "<option>2008</option>";
-            salida+= "<option>205</option>";
-            salida+= "<option>206</option>";
-            salida+= "<option>207</option>";
-            salida+= "<option>207 Compact</option>";
-            salida+= "<option>208</option>";
-            salida+= "<option>3008</option>";
-            salida+= "<option>306</option>";
-            salida+= "<option>307</option>";
-            salida+= "<option>308</option>";
-            salida+= "<option>308 Hatchback</option>";
-            salida+= "<option>403</option>";
-            salida+= "<option>404</option>";
-            salida+= "<option>405</option>";
-            salida+= "<option>406</option>";
-            salida+= "<option>407</option>";
-            salida+= "<option>408</option>";
-            salida+= "<option>5008</option>";
-            salida+= "<option>504</option>";
-            salida+= "<option>505</option>";
-            salida+= "<option>508</option>";
-            salida+= "<option>607</option>";
-            salida+= "<option>807</option>";
-            salida+= "<option>Boxer</option>";
-            salida+= "<option>Expert</option>";
-            salida+= "<option>Hoggar</option>";
-            salida+= "<option>Partner</option>";
-            salida+= "<option>RCZ</option>";
-            salida+= "<option>Otro Modelo</option>";        
+            salida+= "<option>PEUGEOT 208 5 PUERTAS</option>";
+            salida+= "<option>PEUGEOT 208 GT</option>";
+            salida+= "<option>PEUGEOT 308 5 PUERTAS</option>";
+            salida+= "<option>PEUGEOT 308 ACTIVE</option>";
+            salida+= "<option>PEUGEOT  408 ACTIVE</option>";
+            salida+= "<option>PEUGEOT 508</option>";
+            salida+= "<option>PEUGEOT 2008 SUV</option>";
+            salida+= "<option>PEUGEOT 3008 SUV</option>";
+            salida+= "<option>PEUGEOT5008</option>";
+            salida+= "<option>PARTNER PATAGONICA</option>";
+            salida+= "<option>PARTNER FURGON</option>";
+            salida+= "<option>EXPERT FURGON</option>";
+            salida+= "<option>OTRO</option>";
             break;
             
         case "Renault":
-            salida+= "<option>Clio</option>";
-            salida+= "<option>Clio Mio</option>";
-            salida+= "<option>Duster</option>";
-            salida+= "<option>Express</option>";
-            salida+= "<option>Fluence</option>";
-            salida+= "<option>Kangoo</option>";
-            salida+= "<option>Kangoo 2</option>";
-            salida+= "<option>Koleos</option>";
-            salida+= "<option>Laguna</option>";
-            salida+= "<option>Latitude</option>";
-            salida+= "<option>Logan</option>";
-            salida+= "<option>Master</option>";
-            salida+= "<option>Megane</option>";
-            salida+= "<option>Megane III</option>";
-            salida+= "<option>Rodeo</option>";
-            salida+= "<option>Sandero</option>";
-            salida+= "<option>Sandero Stepway</option>";
-            salida+= "<option>Scenic</option>";
-            salida+= "<option>Symbol</option>";
-            salida+= "<option>Torino</option>";
-            salida+= "<option>Trafic</option>";
-            salida+= "<option>Twingo</option>";
-            salida+= "<option>Otro Modelo</option>";
+            salida+= "<option>CLIO MIO</option>";
+            salida+= "<option>SANDERO  GT LINE</option>";
+            salida+= "<option>SANDERO</option>";
+            salida+= "<option>SANDERO STEPWAY</option>";
+            salida+= "<option>LOGAN</option>";
+            salida+= "<option>DUSTER</option>";
+            salida+= "<option>DUSTER DAKAR (SERIE LIMITADA)</option>";
+            salida+= "<option>FLUENCE</option>";
+            salida+= "<option>MEGANNE III</option>";
+            salida+= "<option>KANGOO</option>";
+            salida+= "<option>CLIO WORK</option>";
+            salida+= "<option>DUSTER OROCH</option>";
+            salida+= "<option>KANGOO EXPRESS</option>";
+            salida+= "<option>OTRO</option>";
             break;
             
         case "Volkswagen":
-            salida+= "<option>Amarok</option>";
-            salida+= "<option>Beetle</option>";
-            salida+= "<option>Bora</option>";
-            salida+= "<option>CrossFox</option>";
-            salida+= "<option>Fox</option>";
-            salida+= "<option>Gol</option>";
-            salida+= "<option>Golf</option>";
-            salida+= "<option>New Beetle</option>";
-            salida+= "<option>Passat</option>";
-            salida+= "<option>Polo</option>";
-            salida+= "<option>Saveiro</option>";
-            salida+= "<option>Scirocco</option>";
-            salida+= "<option>Sharan</option>";
-            salida+= "<option>Suran</option>";
-            salida+= "<option>Tiguan</option>";
-            salida+= "<option>Touareg</option>";
-            salida+= "<option>Transporter</option>";
-            salida+= "<option>Up!</option>";
-            salida+= "<option>Vento</option>";
-            salida+= "<option>Voyage</option>";
-            salida+= "<option>Otro Modelo</option>";
+            salida+= "<option>NUEVO GOL</option>";
+            salida+= "<option>NUEVO VOYAGE</option>";
+            salida+= "<option>NUEVO SAVEIRO</option>";
+            salida+= "<option>UP!</option>";
+            salida+= "<option>NUEVO CROSS UP!</option>";
+            salida+= "<option>FOX</option>";
+            salida+= "<option>CROSSFOX</option>";
+            salida+= "<option>SURAN</option>";
+            salida+= "<option>SURAN CROSS</option>";
+            salida+= "<option>GOLF</option>";
+            salida+= "<option>GOLF VARIANT</option>";
+            salida+= "<option>GOLF GTI</option>";
+            salida+= "<option>POLO</option>";
+            salida+= "<option>NUEVO VENTO GLI</option>";
+            salida+= "<option>VENTO</option>";
+            salida+= "<option>TIGUAN</option>";
+            salida+= "<option>AMAROK</option>";
+            salida+= "<option>TOUAREG</option>";
+            salida+= "<option>NUEVO SCIROCCO GTS</option>";
+            salida+= "<option>CC</option>";
+            salida+= "<option>THE BEETLE</option>";
+            salida+= "<option>CAMIONES Y BUSES</option>";
+            salida+= "<option>OTRO</option>";
             break;
     }
 
@@ -171,6 +146,8 @@ $(document).ready(function () {
             var objeto = $(this).data("objeto");
 
             if (objeto == 'Casa') {
+				$(".txtObjeto").html("vivienda");
+
                 $(".datosAuto").fadeOut(function() {
                     $(".datosCasa").fadeIn();
                 });
@@ -180,6 +157,8 @@ $(document).ready(function () {
                 });*/
             }
             else {
+				$(".txtObjeto").html("vehículo 0km");
+
                 $(".datosCasa").fadeOut(function() {
                     $(".datosAuto").fadeIn();
                 });

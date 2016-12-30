@@ -13552,3 +13552,22 @@ body:not(.no-transition) #wrapper,
 .btnActivo { background-color: #016EB3; }
 
 .datosAuto {display: none;}
+
+.textoHeader {
+	position: absolute;
+	right: 0;
+	top: 15px;
+	color: white;
+	font-size: 18pt;
+	transition: all 1s ease;
+}
+
+.sticky-header .textoHeader {
+	top: 10px !important;
+}
+
+.imgObjeto {
+	position: absolute;
+	width: 150px;
+	height: auto;
+}
