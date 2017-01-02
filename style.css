@@ -152,8 +152,6 @@ a:hover { color: #222; }
 
 a img { border: none; }
 
-img { max-width: 100%; }
-
 iframe { border: none !important; }
 
 
@@ -1982,6 +1980,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 #header-wrap,
 #logo img {
 	height: 100px;
+	width: auto;
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	-o-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease;
@@ -13570,4 +13569,12 @@ body:not(.no-transition) #wrapper,
 	position: absolute;
 	width: 150px;
 	height: auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) 
+and (max-width: 991px), not all, not all, not all, only screen and (max-width: 991px) and (min-resolution: 192dpi), only screen and (max-width: 991px) and (min-resolution: 2dppx) {
+	#header, #header-wrap, #logo img {
+		width: 100%;
+		height: auto;
+	}
 }
