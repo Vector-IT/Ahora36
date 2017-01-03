@@ -7479,6 +7479,7 @@ body:not(.device-touch) .button.button-full strong {
 	position: relative;
 	margin-top: 20px;
 	padding: 0 0 0 80px;
+	min-height: 150px;
 }
 
 .feature-box:first-child { margin-top: 0; }
@@ -11574,7 +11575,7 @@ body:not(.device-touch) #gotoTop {
 
 .stretched #gotoTop { bottom: 30px; }
 
-#gotoTop:hover { background-color: #1ABC9C; }
+#gotoTop:hover {background-color: #3A9CD9;}
 
 
 /* ----------------------------------------------------------------

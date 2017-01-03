@@ -2,7 +2,7 @@ function cargarModelos(marca) {
     var salida = "";
 
     switch (marca) {
-        case "Chevrolet":
+        case "CHEVROLET":
             salida+= "<option>SPARK</option>";
             salida+= "<option>AGILE</option>";
             salida+= "<option>CLASSIC</option>";
@@ -24,7 +24,7 @@ function cargarModelos(marca) {
             salida+= "<option>OTRO</option>";
             break;
 
-        case "Citroen":
+        case "CITROEN":
             salida+= "<option>C3</option>";
             salida+= "<option>C-Elyseé</option>";
             salida+= "<option>C4 Lounge</option>";
@@ -37,7 +37,7 @@ function cargarModelos(marca) {
             salida+= "<option>OTRO</option>";
             break;
 
-        case "Fiat":
+        case "FIAT":
             salida+= "<option>MOBI</option>";
             salida+= "<option>FIORINO</option>";
             salida+= "<option>DOBLÓ CARGO</option>";
@@ -57,7 +57,7 @@ function cargarModelos(marca) {
             salida+= "<option>OTRO</option>";
             break;
             
-        case "Ford":
+        case "FORD":
             salida+= "<option>NUEVO KA</option>";
             salida+= "<option>FIESTA</option>";
             salida+= "<option>FIESTA SEDAN</option>";
@@ -74,7 +74,7 @@ function cargarModelos(marca) {
             salida+= "<option>OTRO</option>";
             break;
             
-        case "Peugeout":
+        case "PEUGEOUT":
             salida+= "<option>PEUGEOT 208 5 PUERTAS</option>";
             salida+= "<option>PEUGEOT 208 GT</option>";
             salida+= "<option>PEUGEOT 308 5 PUERTAS</option>";
@@ -90,7 +90,7 @@ function cargarModelos(marca) {
             salida+= "<option>OTRO</option>";
             break;
             
-        case "Renault":
+        case "RENAULT":
             salida+= "<option>CLIO MIO</option>";
             salida+= "<option>SANDERO  GT LINE</option>";
             salida+= "<option>SANDERO</option>";
@@ -107,7 +107,7 @@ function cargarModelos(marca) {
             salida+= "<option>OTRO</option>";
             break;
             
-        case "Volkswagen":
+        case "VOLKSWAGEN":
             salida+= "<option>NUEVO GOL</option>";
             salida+= "<option>NUEVO VOYAGE</option>";
             salida+= "<option>NUEVO SAVEIRO</option>";
@@ -134,7 +134,7 @@ function cargarModelos(marca) {
             break;
     }
 
-    $("#cmbModelo").html(salida);
+    $("#cmbModeloAuto").html(salida);
 }
 
 $(document).ready(function () {
