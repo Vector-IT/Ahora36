@@ -251,8 +251,9 @@ $(document).ready(function () {
                 if (xmlhttp.readyState==4 && xmlhttp.status==200) {
                     $('#prestamoON').hide();
 
-                    if (xmlhttp.responseText.indexOf('Error') == -1) {
+                    if (xmlhttp.responseText.indexOf('ERROR') == -1) {
                         $('#frmDatos' + divOk).hide();
+                        $('.imgObjeto'  + divOk).hide();
 
                         $("#prestamoOK" + divOk).fadeIn(function() {
                             var targetOffset = $("#prestamoOK" + divOk).offset().top-200;

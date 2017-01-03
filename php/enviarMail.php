@@ -8,7 +8,7 @@
 
 		$header = 'MIME-Version: 1.0' . "\r\n";
 		$header.= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-		$header.= 'From: Creditos para viviendas <info@creditosparaviviendas.com>' . "\r\n";
+		$header.= 'From: Ahora 36 <info@ahora36.com>' . "\r\n";
 		//$header.= 'Bcc: jmperro@gmail.com' . "\r\n";
 		$header.= 'Bcc: defabricaofertas@gmail.com' . "\r\n";
 
